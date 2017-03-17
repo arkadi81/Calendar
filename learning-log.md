@@ -28,4 +28,11 @@ $gulp
 
 #test
 $mocha or $npm test
+
+#questions so far:
+how do fancy git repos get the icons which check report on build status, downloads etc? travis? istanbull?
+
+added example.spec.js to test directory as sample of working tests
+$mocha --watch to run ongoing testing now functional.
+server also running and updates views on save.
  
