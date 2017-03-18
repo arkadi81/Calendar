@@ -19,8 +19,10 @@ requires bower
 - git init / clone or set destination to github
 - npm install -g bower yo
 - npm install generator-express
+- yo express
 - run mysql server locally
 - npm install -g mocha
+- npm install chai (has to be local!!)
 - to connect to db, in config.js set db: 'mysql://user:pass@localhost/calendar'
 
 #Run (development)
@@ -34,5 +36,14 @@ how do fancy git repos get the icons which check report on build status, downloa
 
 added example.spec.js to test directory as sample of working tests
 $mocha --watch to run ongoing testing now functional.
-server also running and updates views on save.
+server also running and updates views on save.]
+
+- need to learn how to write code for expresss routing.
+
+// CRUD functionality
+create read update delete
  
+ ## express generator is now installed globally, so minimal scaffolding can just be done using 
+ $ express [dirname]
+
+ - chai must be installed locally to work 

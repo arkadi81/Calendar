@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script> --> <!-- integrate socket io client side for notification --> 
+  <script src="js/globals.js"></script> <!-- everything is public is root -->
+  <script src="js/sockets.js"></script> <!-- everything is public is root -->
+  <% if (ENV_DEVELOPMENT) { %>
+    <script src="http://localhost:35729/livereload.js"></script>
+  <% } %>
+</head>
+<body>

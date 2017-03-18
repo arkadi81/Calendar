@@ -1,0 +1,23 @@
+<% include header %>
+
+  <h1><%-title %></h1>
+  <p> <%-title %></p>
+  <button onClick="notifyMe()">notify!!</button>
+  <button onClick="sendMessage()">send message to server using socket</button>
+  <button onClick="socketTest()">socket test</button>
+
+  <!-- include a table here -->
+  <dir>
+    <button onClick="addNewEvent()">New event!</button>
+  </dir>
+  <div id="content" style="background-color:red">
+    <div id="wrapper">
+      <h2>Events</h2>
+      <% include events %>
+        
+    </div>
+  </div>
+
+  
+
+<% include footer %>

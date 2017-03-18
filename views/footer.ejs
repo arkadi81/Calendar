@@ -1,0 +1,18 @@
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script>
+  var socket = io();
+  socket.on('response', function(msg){
+      $('#messages').append($('<li>').text(msg));
+      notifyMe('response from server',msg);
+    });
+</script>
+    
+<div id="messages"></div>
+
+THIS NEEDS TONS OF REFACTORING BUT BI-DIRECTIONAL COMMUNICATION USING SOCKETS WORKS!!
+NOTIFICATION WORKS (buggy but works, need to not have it pop up twice)
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<div id="userList">
+      <table>
+        <thead>
+          <th>ID</th>
+          <th>Event name</th>
+          <th>Location</th>
+          <th>Time</th>
+          <th>Acknowledged</th>
+          <th>Hide/Show</th>
+        </thead>
+        <tbody>
+          <% for(var i=0; i<events.length; i++) { %>
+            <tr>
+              <td><%= events[i].id %></td>
+              <td><%= events[i].name %></td>
+              <td><%= events[i].location %></td>
+              <td>0</td>
+              <td> <input type="checkbox" id=<%= events[i].id %>></td>
+              <td> <input type="checkbox" id=<%= events[i].id %>></td>
+          
+
+          <% } %>
+        </tbody>
+      </table>
+    </div>
